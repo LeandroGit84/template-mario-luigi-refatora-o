@@ -10,7 +10,7 @@
 }
 
 :root {
-    --right: ##7CFC00;
+    --right: #7CFC00;
 }
 
 :root {
@@ -116,7 +116,7 @@ video {
 
 button {
     background-color: var(--button-backgroundcolor);
-    color: var(--color);
+    color: var(--color-white);
     width: 200px;
     height: 50px;
     font-size: 16px;
