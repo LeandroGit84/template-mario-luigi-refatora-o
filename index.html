@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pagina Mario & Luigi</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="assets/img/logo-header.png" alt="" />
+
+      <a href="">Home</a>
+      <a
+        href="#"
+        onclick="
+          chamarForm();
+          return false;
+        "
+      >
+        Fale Conosco
+      </a>
+      <a href="servicos.html" target="_blank">Nossos Serviços</a>
+    </header>
+
+    <div class="main">
+      <div class="div-sobre">
+        <img
+          class="logo-mario"
+          src="assets/img/logo.png"
+          alt="logo-site-mario"
+        />
+        <p>
+          🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos
+          Com Estilo! 🔧
+        </p>
+        <p>
+          Você já se encontrou em uma situação de emergência com encanamento?
+          Vazamentos inesperados, canos entupidos ou torneiras que não param de
+          pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+          Apresentamos a vocês os encanadores mais famosos do Reino dos
+          Cogumelos - Mario e Luigi!
+        </p>
+
+        <button id="meuBotao" onclick="mostrarForm()">Entre em contato</button>
+      </div>
+
+      <div class="div-right">
+        <img
+          class="logo-luigi-mario"
+          src="assets/img/mario-luigi.png"
+          alt="imagem-mario-luigi"
+        />
+      </div>
+    </div>
+    <div class="mascara-video"></div>
+    <video
+      class="div-video"
+      src="assets/video/video.mp4"
+      autoplay
+      loop
+      muted
+    ></video>
+
+    <div class="div-link-whatsapp">
+      <a
+        class="link-whatsapp"
+        href="https://wa.me/5513999999999?text=Ola%2C%20servi%C3%A7os%20de%20hidra%C3%BAlica"
+        target="_blank"
+      >
+        <img src="assets/img/whatsapp.png" alt="imagem-whatsapp" />
+      </a>
+    </div>
+
+    <form
+      id="formulario"
+      action="https://formcarry.com/s/itt7FgqGRNM"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <input type="text" placeholder="Seu Nome" name="nome" id="nome" />
+      <input type="email" placeholder="Seu e-mail" name="email" id="email" />
+      <textarea
+        name="mensagem"
+        placeholder="Digite seu problema aqui"
+        id="mensagem"
+      ></textarea>
+      <button type="submit">Pedir Orçamento</button>
+    </form>
+
+    <div class="mascara-form" onclick="esconderForm()"></div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
